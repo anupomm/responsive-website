@@ -354,6 +354,34 @@ form p {
   letter-spacing: 0.1em;
 }
 
+/* take care section */
+#take-care-section{
+  padding: 100px 0;
+}
+.take-care-parent{
+  display: flex;
+  margin: 0 200px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.take-care-img{
+  width: 100%;
+}
+.take-care-img img{
+  width: 100%;
+}
+.take-care-title h2{
+  font-size: 30px;
+}
+.take-care-title p{
+  margin: 20px 0;
+}
+.take-care-title ul li{
+  list-style-position: inside;
+  margin: 10px 0;
+}
+
 /* nav bar responsive code */
 @media only screen and (max-width: 940px) {
   nav ul {
@@ -444,10 +472,20 @@ form p {
     grid-template-columns: repeat(1, 1fr);
     margin: 0 30px;
     gap: 25px;
-    
+  }
   .unmatches-service-title{
     text-align: center;
   }
+  /* take care section responsive */
+  .take-care-parent{
+    display: block;
+    margin: 0 30px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
+  .take-care-title{
+    margin-bottom: 70px;
   }
   
 }
@@ -501,6 +539,14 @@ form p {
     grid-template-columns: repeat(2, 1fr);
     margin: 0 70px;
     gap: 35px;
+  }
+  /* take care section responsive */
+  .take-care-parent{
+    display: block;
+    margin: 0 70px;
+  }
+  .take-care-title{
+    margin-bottom: 80px;
   }
 }
 @media only screen and (min-width: 993px) {
