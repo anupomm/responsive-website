@@ -249,10 +249,72 @@ header {
   transition: 0.5s;
   border: 1px solid black;
 }
-.right-advice a:hover{
+.right-advice a:hover {
   background-color: #ffe4c4;
 }
 
+/* contcat us section style */
+#contact-section {
+  background-image: linear-gradient(rgba(57, 88, 162, 0.37), rgb(64, 137, 199)), url(images/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 100px 0;
+}
+form{
+  background-color: #2E357A;
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 50px 60px;
+  border: 6px solid #4497D3;
+  border-radius: 10px;
+}
+form h2{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+form p{
+ color: white;
+ text-align: center;
+ margin: 30px 0;
+ letter-spacing: 0.1em;
+}
+.contact-us-inputs{
+  display: block;
+  width: 100%;
+  height: 40px;
+  margin: 50px 0;
+  border: none;
+  outline: none;
+  background: none;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  border-bottom: 3px solid #4497D3;
+}
+.contact-us-inputs::placeholder{
+  color: #4497D3;
+  font-size: 18px;
+  font-weight: bold;
+}
+.submit-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 5px 40px;
+  font-size: 20px;
+  background: none;
+  color: white;
+  text-transform: uppercase;
+  outline-style: ridge;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.submit-btn:hover{
+  background-color: #16213E;
+}
 /* nav bar responsive code */
 @media only screen and (max-width: 940px) {
   nav ul {
@@ -331,9 +393,12 @@ header {
   }
   .left-advice-icons a {
     margin: 10px 5px;
-    
   }
-  
+  /* contact us section start */
+  form{
+    max-width: 90%;
+    padding: 20px 30px;
+  }
 }
 @media only screen and (min-width: 689px) and (max-width: 992px) {
   .six-box-parent {
@@ -371,9 +436,13 @@ header {
   .left-advice-icons {
     text-align: center;
   }
-  .left-advice-icons a{
+  .left-advice-icons a {
     margin: 10px 5px;
-    
+  }
+  /* contact us start */
+  form{
+    max-width: 90%;
+    padding: 40px 50px;
   }
 }
 @media only screen and (min-width: 993px) {
@@ -390,8 +459,7 @@ header {
   .left-advice-icons {
     text-align: center;
   }
-  .left-advice-icons a{
+  .left-advice-icons a {
     margin: 10px 5px;
-    
   }
 }
