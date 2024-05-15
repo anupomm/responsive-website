@@ -56,44 +56,6 @@ nav ul li a.active-nav-item {
   display: none;
 }
 
-/* nav bar responsive code */
-@media only screen and (max-width: 940px) {
-  nav ul {
-    position: fixed;
-    /* cause nav er height 80px deoa ase */
-    top: 80px;
-    /* hidden kora holo */
-    left: -100%;
-    background-color: #17202a;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 20px;
-    transition: all 0.5s ease;
-  }
-  nav ul li {
-    margin: 50px 0;
-  }
-  nav ul li a {
-    font-size: 22px;
-  }
-  nav ul li a:hover,
-  nav ul li a.active-nav-item {
-    background: none;
-    color: red;
-  }
-  .menu-btn {
-    display: block;
-  }
-  #click:checked ~ ul {
-    left: 0%;
-  }
-  #click:checked ~ .menu-btn i::before {
-    content: "\f00d";
-    font-size: 22px;
-  }
-}
 
 /* header section */
 header {
@@ -135,6 +97,88 @@ header {
   margin: 10px 0;
 }
 
+
+/* 2nd smart area section css code */
+.smart-area-div{
+  background-color: #154360;
+  padding-bottom: 100px;
+}
+.smart-area-title{
+  text-align: center;
+  padding: 50px 0;
+  letter-spacing: 0.3em;
+  font-size: 20px;
+  color: yellow;
+}
+.smart-area-img-text-parent{
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 200px;
+}
+.smart-area-text{
+  color: white;
+}
+.smart-area-text > h4{
+  text-transform: uppercase;
+}
+.smart-area-text h2{
+  margin: 20px 0;
+}
+.smart-area-text a{
+  text-decoration: none;
+  color: black;
+  margin-top: 30px;
+  display: inline-block;
+  background-color: #FFE4C4;
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+
+
+
+/* nav bar responsive code */
+@media only screen and (max-width: 940px) {
+  nav ul {
+    position: fixed;
+    /* cause nav er height 80px deoa ase */
+    top: 80px;
+    /* hidden kora holo */
+    left: -100%;
+    background-color: #17202a;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    transition: all 0.5s ease;
+  }
+  nav ul li {
+    margin: 50px 0;
+  }
+  nav ul li a {
+    font-size: 22px;
+  }
+  nav ul li a:hover,
+  nav ul li a.active-nav-item {
+    background: none;
+    color: red;
+  }
+  .menu-btn {
+    display: block;
+  }
+  #click:checked ~ ul {
+    left: 0%;
+  }
+  #click:checked ~ .menu-btn i::before {
+    content: "\f00d";
+    font-size: 22px;
+  }
+}
 /* first section media query code */
 @media only screen and (max-width: 688px) {
   .six-box-parent {
@@ -143,6 +187,14 @@ header {
     gap: 15px;
     width: 100%;
   }
+  .smart-area-img-text-parent{
+    display: block;
+    margin: 0 30px;
+  }
+  .smart-area-image img{
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 @media only screen and (min-width: 689px) and (max-width: 992px) {
     .six-box-parent {
@@ -150,6 +202,14 @@ header {
       grid-template-columns: repeat(2, 1fr);
       gap: 20px;
       width: 100%;
+    }
+    .smart-area-img-text-parent{
+      display: block;
+      margin: 0 30px;
+    }
+    .smart-area-image img{
+      width: 100%;
+      margin-bottom: 70px;
     }
   }
   @media only screen and (min-width: 993px){
@@ -160,3 +220,4 @@ header {
       width: 100%;
     }
   }
+
