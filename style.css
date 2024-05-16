@@ -253,7 +253,7 @@ header {
   background-color: #ffe4c4;
 }
 
-/* contcat us section style */
+/* contact us section style */
 #contact-section {
   background-image: linear-gradient(rgba(57, 88, 162, 0.37), rgb(64, 137, 199)),
     url(images/contact.jpg);
@@ -355,31 +355,92 @@ form p {
 }
 
 /* take care section */
-#take-care-section{
+#take-care-section {
   padding: 100px 0;
 }
-.take-care-parent{
+.take-care-parent {
   display: flex;
   margin: 0 200px;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
-.take-care-img{
+.take-care-img {
   width: 100%;
 }
-.take-care-img img{
+.take-care-img img {
   width: 100%;
 }
-.take-care-title h2{
+.take-care-title h2 {
   font-size: 30px;
 }
-.take-care-title p{
+.take-care-title p {
   margin: 20px 0;
 }
-.take-care-title ul li{
+.take-care-title ul li {
   list-style-position: inside;
   margin: 10px 0;
+}
+
+/* footer section */
+footer {
+  background-color: #154360;
+  padding: 100px 0 25px 0;
+}
+.footer-main-div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 200px;
+  padding-bottom: 100px;
+  gap: 80px;
+}
+.footer-single-items {
+  width: 100%;
+  color: white;
+}
+.footer-single-items h5 {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: 3px;
+}
+.footer-single-items span {
+  color: yellow;
+  font-weight: bold;
+  padding: 0 10px;
+}
+.footer-single-items p {
+  font-size: 14px;
+  margin-left: 10px;
+}
+.quick-links a {
+  text-decoration: none;
+  display: block;
+  color: white;
+  font-size: 14px;
+  margin-left: 35px;
+}
+.footer-single-items ul {
+  display: flex;
+  margin-left: 10px;
+}
+.footer-single-items ul li {
+  list-style-type: none;
+}
+.footer-single-items ul li a {
+  text-decoration: none;
+  background-color: #113851;
+  padding: 8px;
+  margin: 0 5px;
+  color: white;
+}
+#copyright {
+  padding-top: 50px;
+  padding-bottom: -50px;
+  text-align: center;
+  color: white;
+}
+hr {
+  margin-bottom: -20px;
 }
 
 /* nav bar responsive code */
@@ -473,21 +534,40 @@ form p {
     margin: 0 30px;
     gap: 25px;
   }
-  .unmatches-service-title{
+  .unmatches-service-title {
     text-align: center;
   }
   /* take care section responsive */
-  .take-care-parent{
+  .take-care-parent {
     display: block;
     margin: 0 30px;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
   }
-  .take-care-title{
+  .take-care-title {
     margin-bottom: 70px;
   }
-  
+
+  /* footer section responsive */
+  .footer-main-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 30px;
+  }
+  .footer-single-items {
+    text-align: center;
+  }
+  .footer-single-items ul {
+    display: flex;
+    justify-content: center;
+  }
+  .quick-links a{
+    margin: 0;
+  }
+  #copyright {
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 689px) and (max-width: 992px) {
   .six-box-parent {
@@ -541,15 +621,31 @@ form p {
     gap: 35px;
   }
   /* take care section responsive */
-  .take-care-parent{
+  .take-care-parent {
     display: block;
     margin: 0 70px;
   }
-  .take-care-title{
+  .take-care-title {
     margin-bottom: 80px;
   }
+  /* footer responsive */
+  .footer-main-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
+  }
+  .footer-single-items {
+    text-align: center;
+  }
+  .footer-single-items ul {
+    display: flex;
+    justify-content: center;
+  }
+  .quick-links a{
+    margin: 0;
+  }
 }
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 993px) and (max-width: 1190px) {
   .six-box-parent {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -565,5 +661,20 @@ form p {
   }
   .left-advice-icons a {
     margin: 10px 5px;
+  }
+  .footer-main-div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 70px;
+  }
+  .footer-single-items {
+    text-align: center;
+  }
+  .footer-single-items ul {
+    display: flex;
+    justify-content: center;
+  }
+  .quick-links a{
+    margin: 0;
   }
 }
